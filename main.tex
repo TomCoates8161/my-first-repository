@@ -1,21 +1,8 @@
 \documentclass[11pt,a4paper]{amsart}
-\title[My Sample Paper] {My Sample Paper with a Very Long Title}
 
-\author[Coates]{Tom Coates}
-\address{Department of Mathematics\\
-Imperial College London\\
-180 Queen's Gate\\
-London SW7 2AZ
-\\UK}
-\email{t.coates@imperial.ac.uk}
-
-\author[Coauthor]{Alex Coauthor}
-\address{Department of Mathematics\\
-Imperial College London\\
-180 Queen's Gate\\
-London SW7 2AZ
-\\UK}
-\email{a.coauthor@imperial.ac.uk}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% package setup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -69,7 +56,6 @@ London SW7 2AZ
 \newcommand{\fixme}[1]{\textcolor{red}{[FIX ME: #1]}}
 \newcommand{\GIT}{/\!\!/}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% theorems, definitions, etc.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,6 +75,28 @@ London SW7 2AZ
 \newtheorem*{remark*}{Remark}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{assumption}[theorem]{Assumption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% title and authors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[My Sample Paper] {My Sample Paper with a Very Long Title}
+
+\author[Coates]{Tom Coates}
+\address{Department of Mathematics\\
+Imperial College London\\
+180 Queen's Gate\\
+London SW7 2AZ
+\\UK}
+\email{t.coates@imperial.ac.uk}
+
+\author[Coauthor]{Alex Coauthor}
+\address{Department of Mathematics\\
+Imperial College London\\
+180 Queen's Gate\\
+London SW7 2AZ
+\\UK}
+\email{a.coauthor@imperial.ac.uk}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% main document
@@ -111,8 +119,9 @@ London SW7 2AZ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 \input{conclusion}
-
-\bibliography{bibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{plain}
+\bibliography{bibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
