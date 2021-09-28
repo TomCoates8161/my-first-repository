@@ -1,0 +1,118 @@
+\documentclass[11pt,a4paper]{amsart}
+\title[My Sample Paper] {My Sample Paper with a Very Long Title}
+
+\author[Coates]{Tom Coates}
+\address{Department of Mathematics\\
+Imperial College London\\
+180 Queen's Gate\\
+London SW7 2AZ
+\\UK}
+\email{t.coates@imperial.ac.uk}
+
+\author[Coauthor]{Alex Coauthor}
+\address{Department of Mathematics\\
+Imperial College London\\
+180 Queen's Gate\\
+London SW7 2AZ
+\\UK}
+\email{a.coauthor@imperial.ac.uk}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hypersetup{
+	colorlinks=true, 
+	linkcolor=black, 
+	citecolor=black
+}
+
+\raggedbottom
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% operators and symbols
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% operators
+\DeclareMathOperator{\Hom}{{Hom}}
+\DeclareMathOperator{\Ker}{{Ker}}
+\DeclareMathOperator{\Pic}{{Pic}}
+\DeclareMathOperator{\Proj}{{Proj}}
+\DeclareMathOperator{\rk}{{rk}}
+\DeclareMathOperator{\Spec}{{Spec}}
+\DeclareMathOperator{\Sym}{{Sym}}
+
+% mathcal
+\DeclareMathOperator{\cO}{\mathcal{O}}
+
+% mathbb
+\DeclareMathOperator{\CC}{\mathbb{C}}
+\DeclareMathOperator{\FF}{\mathbb{F}}
+\DeclareMathOperator{\NN}{\mathbb{N}}
+\DeclareMathOperator{\PP}{\mathbb{P}}
+\DeclareMathOperator{\QQ}{\mathbb{Q}}
+\DeclareMathOperator{\RR}{\mathbb{R}}
+\DeclareMathOperator{\ZZ}{\mathbb{Z}}
+
+% mathfrak
+\newcommand{\fg}{\mathfrak{g}}
+\newcommand{\fm}{\mathfrak{m}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\fixme}[1]{\textcolor{red}{[FIX ME: #1]}}
+\newcommand{\GIT}{/\!\!/}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% theorems, definitions, etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{remark*}{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{assumption}[theorem]{Assumption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% main document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{abstract}
+	Abstract goes here. \fixme{Write this!}
+\end{abstract}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\input{introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Another section}
+\input{another_section}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\input{conclusion}
+
+\bibliography{bibliography}
+\bibliographystyle{plain}
+
+\end{document}
